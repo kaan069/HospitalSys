@@ -1,0 +1,109 @@
+﻿@model IEnumerable<Hastane_Proj.Models.Patient>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasta Listesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .edit-btn {
+            background-color: #ffc107;
+        }
+
+        .delete-btn {
+            background-color: #dc3545;
+        }
+
+        .add-btn {
+            background-color: #28a745;
+            padding: 10px 15px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hasta Listesi</h2>
+
+        <a href="/Patient/Create" class="btn add-btn">Yeni Hasta Ekle</a>
+
+        <table>
+            <tr>
+                <th>T.C Kimlik No</th>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Telefon</th>
+                <th>İşlemler</th>
+            </tr>
+            @foreach (var patient in Model)
+            {
+                <tr>
+                    <td>@patient.TcNo</td>
+                    <td>@patient.FirstName</td>
+                    <td>@patient.LastName</td>
+                    <td>@patient.Phone</td>
+                    <td>
+                        <a href="/Patient/Edit/@patient.Id" class="btn edit-btn">Düzenle</a>
+                        <a href="/Patient/Delete/@patient.Id" class="btn delete-btn" onclick="return confirm('Bu hastayı silmek istediğinize emin misiniz?');">Sil</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

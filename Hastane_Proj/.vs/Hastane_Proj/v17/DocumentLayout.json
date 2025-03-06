@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fk25f\\OneDrive\\Masa\u00FCst\u00FC\\Hastane_Proj\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1675F647-81CA-4EE4-8C40-CF469AA9DF82}|Hastane_Proj\\Hastane_Proj.csproj|c:\\users\\fk25f\\onedrive\\masa\u00FCst\u00FC\\hastane_proj\\hastane_proj\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1675F647-81CA-4EE4-8C40-CF469AA9DF82}|Hastane_Proj\\Hastane_Proj.csproj|solutionrelative:hastane_proj\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\fk25f\\OneDrive\\Masa\u00FCst\u00FC\\Hastane_Proj\\Hastane_Proj\\appsettings.json",
+              "RelativeDocumentMoniker": "Hastane_Proj\\appsettings.json",
+              "ToolTip": "C:\\Users\\fk25f\\OneDrive\\Masa\u00FCst\u00FC\\Hastane_Proj\\Hastane_Proj\\appsettings.json",
+              "RelativeToolTip": "Hastane_Proj\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-06T00:07:33.217Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

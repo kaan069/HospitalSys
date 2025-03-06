@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Hastane_Proj.props" />
+</Project>

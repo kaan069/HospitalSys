@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Hastane Yönetim Sistemi";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h2 class="mb-4 text-primary">
+                        <i class="fas fa-hospital"></i> HASTANE YÖNETİM SİSTEMİ
+                    </h2>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <a href="/Doctor/Index" class="btn btn-primary w-100">
+                                <i class="fas fa-user-md"></i> Doktor Listesi
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="/Patient/Index" class="btn btn-primary w-100">
+                                <i class="fas fa-user-injured"></i> Hasta Listesi
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="/Patient/Create" class="btn btn-success w-100">
+                                <i class="fas fa-plus-circle"></i> Yeni Hasta Kaydı
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="/Doctor/Create" class="btn btn-success w-100">
+                                <i class="fas fa-user-plus"></i> Yeni Doktor Kaydı
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="/PatientDoctor/Create" class="btn btn-info w-100">
+                                <i class="fas fa-user-friends"></i> Hasta-Doktor Kaydı
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="/PatientDoctor/Index" class="btn btn-info w-100">
+                                <i class="fas fa-list"></i> Hasta-Doktor Listesi
+                            </a>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="/Home/TCSearch" class="btn btn-warning w-100">
+                                <i class="fas fa-id-card"></i> TC Sorgu Ekranı
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

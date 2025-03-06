@@ -1,0 +1,48 @@
+﻿@model Hastane_Proj.Models.Doctor
+
+@{
+    ViewData["Title"] = "Yeni Doktor Ekle";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h2 class="text-center text-primary mb-4">
+                        <i class="fas fa-user-md"></i> Yeni Doktor Ekle
+                    </h2>
+
+                    <form asp-action="Create" method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Doktor TC</label>
+                            <input type="text" class="form-control" asp-for="DoctorTc" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Doktor Adı</label>
+                            <input type="text" class="form-control" asp-for="FirstName" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Doktor Soyadı</label>
+                            <input type="text" class="form-control" asp-for="LastName" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Uzmanlık Alanı</label>
+                            <input type="text" class="form-control" asp-for="Deparment" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-save"></i> Kaydet
+                        </button>
+                    </form>
+
+                    <a href="/Doctor/Index" class="btn btn-secondary w-100 mt-3">
+                        <i class="fas fa-arrow-left"></i> Geri Dön
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
